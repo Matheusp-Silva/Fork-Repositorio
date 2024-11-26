@@ -1,0 +1,326 @@
+INFO:root:FINALIZAR TAREFAS CAT
+INFO:root:Iniciando procedimento para leitura de e-mails para registro de processo. Aguarde... (AexePTarefaComFinalizacaoAutomatica)
+EmpresaRepositorio : Sably
+EmpresaId : 1
+TarefaTipo : 3.00
+TarefaTipo : 18.00
+TarefaTipo : 1568.00
+TarefaTipo : 1731.00
+F I M 
+
+
+
+INFO:root:GERAR PROCESSOS RD STATION
+INFO:root:Executando.:AexePGerarProcessoRDStation
+Encontrou o registro : 1310
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226488
+Encontrou o registro : 1311
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226490
+Encontrou o registro : 1312
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226493
+Encontrou o registro : 1313
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226496
+Encontrou o registro : 1314
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226498
+Encontrou o registro : 1315
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226500
+Encontrou o registro : 1316
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226502
+Encontrou o registro : 1317
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226504
+Encontrou o registro : 1318
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226506
+Encontrou o registro : 1319
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226508
+Encontrou o registro : 1320
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226510
+Encontrou o registro : 1321
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226512
+Encontrou o registro : 1322
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+Processo registrado com sucesso! Id: 226514
+Encontrou o registro : 1323
+EmpresaRepositorio : Sably
+PProcessoRDStation - &ProcessoClassificacaoIdOrigem2   1600
+PProcessoRDStation - &RDStationIntegracaoAuxiliarOrigem    1
+System.Exception: GXflow Runtime Exception
+
+Event listener application threw an exception: GeneXus.Programs.pratualizarstatuswf
+
+Exception message: 
+Type:System.Data.SqlClient.SqlException.DBMS Error Code:1205.Transaction (Process ID 114) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+
+Exception stack trace:
+   em GeneXus.Data.ADO.GxCommand.FetchData(IDataReader& dr)
+   em GeneXus.Data.NTier.ADO.ForEachCursor.execute()
+   em GeneXus.Data.NTier.DataStoreProvider.execute(Int32 cursor, Object[] parms, Boolean batch)
+   em GeneXus.Programs.pratualizarstatuswf.executePrivate()
+   em GeneXus.Programs.pratualizarstatuswf.gxep_wfexecute(Int64 aP0_WFEventHandlerId)
+
+   em GXflow.Programs.pwfcalllistener.executePrivate()
+   em GXflow.Programs.pwfcalllistener.execute(String& aP0_app, Int64& aP1_WFEvnId)
+   em GXflow.Programs.pwffirepiscevent.executePrivate()
+   em GXflow.Programs.pwfstatemachine.S1920()
+   em GXflow.Programs.pwfstatemachine.executePrivate()
+   em GXflow.Programs.pwfstatemachine.execute(Int64& aP0_parmItemId, String aP1_parmAction, String aP2_parmChar, String aP3_parmState, String& aP4_parmApp, String& aP5_parmHtmlApp, Int32& aP6_parmPrcId, Int16 aP7_parmNum4, Int64& aP8_parmInst, Int16& aP9_WFError)
+   em GXflow.Programs.pwfdtpistart.executePrivate()
+   em GXflow.Programs.pwfdtpistart.execute(Int64 aP0_parmInsPrcId, Int16& aP1_WFError)
+   em GXflow.API.GXInterop.ProcessInstanceStart(ProcessInstance processInstance)
+   em GXflow.API.ProcessInstance.Start()
+   em GeneXus.Programs.SdtWorkflowProcessInstance.start()
+   em GeneXus.Programs.pprocessoiniciaworkflow.executePrivate()
+   em GeneXus.Programs.pprocessoiniciaworkflow.execute(Int32 aP0_ProcessoServicoId, Int32 aP1_ProcessoClassificacaoId, Int32 aP2_ProcessoWorkflowId, String aP3_ProcessoWorkFlowNome, Int32 aP4_EmpresaId, String aP5_pProcessoNome, Int16 aP6_ProcessoTipo, Int32 aP7_ProcessoSolicitanteId, Int32 aP8_ProcessoCriadorId, Int32 aP9_ProcessoSolicitanteEmpresaId, Int16 aP10_SintomaId, Int16 aP11_ProcessoOrigemAbertura, String aP12_ProcessoEquipamentoNumeroSerie, Int32 aP13_ProcessoAtendimentoOutraPessoaId, Int32& aP14_ProcessoId)
+   em GeneXus.Programs.pprocessonovo.executePrivate()
+   em GeneXus.Programs.pprocessonovo.execute(Int32 aP0_EmpresaId, Int16 aP1_ProcessoTipo, Int32 aP2_ProcessoServicoId, Int32 aP3_ProcessoClassificacaoId, Int32 aP4_ProcessoSolicitanteId, Int32 aP5_ProcessoSolicitanteEmpresaId, Int16 aP6_ProcessoTipoAtendimento, Int32 aP7_ProcessoWorkflowId, Int16 aP8_SintomaId, String aP9_ProcessoNome, String aP10_ProcessoComentario, Int16 aP11_ProcessoComentarioTipo, Int32 aP12_ProcessoCriadorId, Int16 aP13_ProcessoOrigemAbertura, String aP14_ProcessoEquipamentoNumeroSerie, String aP15_ProcessoFormulario, Int32 aP16_ProcessoAtendimentoOutraPessoaId, Int32& aP17_ProcessoId, String& aP18_MsgErr)
+   em GeneXus.Programs.pprocessordstation.executePrivate()
+   em GeneXus.Programs.pprocessordstation.execute(Int16 aP0_RDStationIntegracaoAuxiliarOrigem, String aP1_ProcessoNome, String aP2_ProcessoComentario, Int32& aP3_ProcessoId, String& aP4_MsgErr)
+   em GeneXus.Programs.aexepgerarprocessordstation.executePrivate()
+   em GeneXus.Programs.aexepgerarprocessordstation.executeCmdLine(String[] args)
+   em GeneXus.Programs.aexepgerarprocessordstation.Main(String[] args)
+
+
+
+INFO:root:NOTIFICAR TAREFAS A TERMINAR NOS PROXIMOS 30 MINUTOS
+INFO:root:Executando.:AexePTarefaProximaExpirarAviso
+Lendo tarefa   918473 - LEVANTAR INFORMACOES 
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   915218 - AGUARDAR,VALIDAR E EFETUAR RETORNO FISCAL 
+Ultimo Executor : GABRIEL BIANCHI TABOAS DA LUZ
+Lendo tarefa   915222 - AGUARDAR,VALIDAR E EFETUAR RETORNO FISCAL 
+Ultimo Executor : GABRIEL BIANCHI TABOAS DA LUZ
+Lendo tarefa   917481 - ELABORAR PROPOSTA COMERCIAL
+Ultimo Executor : WILLERSON PORTELA LEAL
+Lendo tarefa   918408 - DECISAO POS CONFERENCIA FISICA
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   918404 - DECISAO POS CONFERENCIA FISICA
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917055 - REALIZAR FECHAMENTO DE PONTO
+Ultimo Executor : GABRIELA MUSETI PIAZZA CAMPOS
+Lendo tarefa   917868 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917870 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917872 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917875 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917877 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917879 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917881 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917883 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917885 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917886 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917888 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917889 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917890 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917891 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917893 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917898 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917899 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917900 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917903 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917904 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917905 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917906 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917907 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917908 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917910 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917912 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917914 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917916 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917917 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917920 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917921 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917923 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917925 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917926 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917928 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917930 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917931 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917934 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917936 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917938 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917941 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917943 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917944 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917948 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917950 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917952 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   917953 - ANALISAR LEAD
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   918276 - LEVANTAR REQUISTOS E TENTAR REVERTER A DEVOLUCAO
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   918315 - LEVANTAR REQUISTOS E TENTAR REVERTER A DEVOLUCAO
+Ultimo Executor : NÆo atribu¡do
+Lendo tarefa   918399 - LEVANTAR REQUISTOS E TENTAR REVERTER A DEVOLUCAO
+Ultimo Executor : NÆo atribu¡do
+Fim da execu‡Æo: 57 Avisos gerados!
+
+
+
+INFO:root:NOTIFICAR TAREFAS PRONTO PARA TERMINAR
+INFO:root:Nenhum processo na situa‡Æo pronto para terminar...
+
+
+
+INFO:azure.core.pipeline.policies.http_logging_policy:Request URL: 'https://login.microsoftonline.com/6d42126f-d06f-4403-b5ad-bc175c6f7836/v2.0/.well-known/openid-configuration'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.17.1 Python/3.11.9 (Windows-10-10.0.22000-SP0)'
+No body was attached to the request
+INFO:azure.core.pipeline.policies.http_logging_policy:Response status: 200
+Response headers:
+    'Cache-Control': 'max-age=86400, private'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Access-Control-Allow-Methods': 'REDACTED'
+    'P3P': 'REDACTED'
+    'x-ms-request-id': 'ea3d1496-f9a5-4d17-8922-478c9cb50700'
+    'x-ms-ests-server': 'REDACTED'
+    'x-ms-srs': 'REDACTED'
+    'Content-Security-Policy-Report-Only': 'REDACTED'
+    'X-XSS-Protection': 'REDACTED'
+    'Set-Cookie': 'REDACTED'
+    'Date': 'Fri, 22 Nov 2024 11:06:37 GMT'
+    'Content-Length': '1753'
+INFO:azure.core.pipeline.policies.http_logging_policy:Request URL: 'https://login.microsoftonline.com/common/userrealm/robo_electroneek@verhaw.com.br?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'client-request-id': 'REDACTED'
+    'User-Agent': 'azsdk-python-identity/1.17.1 Python/3.11.9 (Windows-10-10.0.22000-SP0)'
+No body was attached to the request
+INFO:azure.core.pipeline.policies.http_logging_policy:Response status: 200
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'P3P': 'REDACTED'
+    'client-request-id': 'REDACTED'
+    'x-ms-request-id': 'f88d657b-49a6-4ccd-9864-9f2f2cda2100'
+    'x-ms-ests-server': 'REDACTED'
+    'x-ms-srs': 'REDACTED'
+    'X-XSS-Protection': 'REDACTED'
+    'Content-Disposition': 'REDACTED'
+    'Set-Cookie': 'REDACTED'
+    'Date': 'Fri, 22 Nov 2024 11:06:37 GMT'
+    'Content-Length': '166'
+INFO:azure.core.pipeline.policies.http_logging_policy:Request URL: 'https://login.microsoftonline.com/6d42126f-d06f-4403-b5ad-bc175c6f7836/oauth2/v2.0/token'
+Request method: 'POST'
+Request headers:
+    'Accept': 'application/json'
+    'x-client-sku': 'REDACTED'
+    'x-client-ver': 'REDACTED'
+    'x-client-os': 'REDACTED'
+    'x-ms-lib-capability': 'REDACTED'
+    'client-request-id': 'REDACTED'
+    'x-client-current-telemetry': 'REDACTED'
+    'x-client-last-telemetry': 'REDACTED'
+    'X-AnchorMailbox': 'REDACTED'
+    'User-Agent': 'azsdk-python-identity/1.17.1 Python/3.11.9 (Windows-10-10.0.22000-SP0)'
+A body is sent with the request
+INFO:azure.core.pipeline.policies.http_logging_policy:Response status: 400
+Response headers:
+    'Cache-Control': 'no-store, no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'P3P': 'REDACTED'
+    'client-request-id': 'REDACTED'
+    'x-ms-request-id': '00fc42de-f9e3-43b8-9b18-7f12f6780600'
+    'x-ms-ests-server': 'REDACTED'
+    'x-ms-clitelem': 'REDACTED'
+    'x-ms-srs': 'REDACTED'
+    'X-XSS-Protection': 'REDACTED'
+    'Set-Cookie': 'REDACTED'
+    'Date': 'Fri, 22 Nov 2024 11:06:37 GMT'
+    'Content-Length': '619'
+WARNING:azure.identity._internal.interactive:UsernamePasswordCredential.get_token failed: Authentication failed: AADSTS50034: The user account {EUII Hidden} does not exist in the 6d42126f-d06f-4403-b5ad-bc175c6f7836 directory. To sign into this application, the account must be added to the directory. Trace ID: 00fc42de-f9e3-43b8-9b18-7f12f6780600 Correlation ID: bd4a4637-662a-4e22-9837-dea658a6f749 Timestamp: 2024-11-22 11:06:37Z
+Content: {"error":"invalid_grant","error_description":"AADSTS50034: The user account {EUII Hidden} does not exist in the 6d42126f-d06f-4403-b5ad-bc175c6f7836 directory. To sign into this application, the account must be added to the directory. Trace ID: 00fc42de-f9e3-43b8-9b18-7f12f6780600 Correlation ID: bd4a4637-662a-4e22-9837-dea658a6f749 Timestamp: 2024-11-22 11:06:37Z","error_codes":[50034],"timestamp":"2024-11-22 11:06:37Z","trace_id":"00fc42de-f9e3-43b8-9b18-7f12f6780600","correlation_id":"bd4a4637-662a-4e22-9837-dea658a6f749","error_uri":"https://login.microsoftonline.com/error?code=50034","suberror":"bad_token"}
